@@ -1,0 +1,264 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Allproperty\BatchBase</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Slim.html"><i class="icon-folder-open"></i> Slim</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">133</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: The Controller Construct"><span class="description">The Controller Construct</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#__destruct" title="__destruct :: The Controller Destruct"><span class="description">The Controller Destruct</span><pre>__destruct()</pre></a></li>
+<li class="method public "><a href="#done" title="done :: an event thrown when the batch is completely done. can be overridden."><span class="description">an event thrown when the batch is completely done. can be overridden.</span><pre>done()</pre></a></li>
+<li class="method public "><a href="#error" title="error :: a function to log errors and mark it appropriately"><span class="description">a function to log errors and mark it appropriately</span><pre>error()</pre></a></li>
+<li class="method public "><a href="#fail" title="fail :: an event thrown when the batch process finishes and fails. can be overridden."><span class="description">an event thrown when the batch process finishes and fails. can be overridden.</span><pre>fail()</pre></a></li>
+<li class="method public "><a href="#getBenchmark" title="getBenchmark :: just return the benchmark of the batch job that ran"><span class="description">just return the benchmark of the batch job that ran</span><pre>getBenchmark()</pre></a></li>
+<li class="method public "><a href="#init" title="init :: an event thrown before doing the batch. can be overridden."><span class="description">an event thrown before doing the batch. can be overridden.</span><pre>init()</pre></a></li>
+<li class="method public "><a href="#log" title="log :: a static method that makes logging convenient in the system context"><span class="description">a static method that makes logging convenient in the system context</span><pre>log()</pre></a></li>
+<li class="method public "><a href="#output" title="output :: Overrideable method that handles the output"><span class="description">Overrideable method that handles the output</span><pre>output()</pre></a></li>
+<li class="method public "><a href="#run" title="run :: Public entry point for running a job on this batch"><span class="description">Public entry point for running a job on this batch</span><pre>run()</pre></a></li>
+<li class="method public "><a href="#success" title="success :: an event thrown when the batch process finishes and succeeds. can be overridden."><span class="description">an event thrown when the batch process finishes and succeeds. can be overridden.</span><pre>success()</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="method private "><a href="#__done" title="__done :: an event thrown when the batch is completely done."><span class="description">an event thrown when the batch is completely done.</span><pre>__done()</pre></a></li>
+<li class="method private "><a href="#__start" title="__start :: an event thrown before doing the batch."><span class="description">an event thrown before doing the batch.</span><pre>__start()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24job" title="$job :: the BatchJob object of the current batch that needs to run"><span class="description">the BatchJob object of the current batch that needs to run</span><pre>$job</pre></a></li>
+<li class="nav-header private">» Private</li>
+<li class="property private "><a href="#%24__ERRORS" title="$__ERRORS :: an array of errors captured"><span class="description">an array of errors captured</span><pre>$__ERRORS</pre></a></li>
+<li class="property private "><a href="#%24__OUTPUT" title="$__OUTPUT :: the output to be returned by output()"><span class="description">the output to be returned by output()</span><pre>$__OUTPUT</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CAllproperty%5CBatchBase" id="\Allproperty\BatchBase"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Allproperty.html">Allproperty</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Allproperty.BatchBase.html">BatchBase</a>
+</li>
+</ul>
+<div href="../classes/Allproperty.BatchBase.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:johnmark@allproperty.com.sg">John Rocela</a></td>
+</tr>
+<tr>
+<th>date</th>
+<td>June 12, 2012</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>The Controller Construct</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"><p>loads configurations and do base initializations
+for the batch file</p></p></div></div>
+</div>
+<a name="__destruct" id="__destruct"></a><div class="element clickable method public __destruct" data-toggle="collapse" data-target=".__destruct .collapse">
+<h2>The Controller Destruct</h2>
+<pre>__destruct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="done" id="done"></a><div class="element clickable method public done" data-toggle="collapse" data-target=".done .collapse">
+<h2>an event thrown when the batch is completely done. can be overridden.</h2>
+<pre>done() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="error" id="error"></a><div class="element clickable method public error" data-toggle="collapse" data-target=".error .collapse">
+<h2>a function to log errors and mark it appropriately</h2>
+<pre>error($error, $code) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$error</h4>
+<code></code>
+</div>
+<div class="subelement argument">
+<h4>$code</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="fail" id="fail"></a><div class="element clickable method public fail" data-toggle="collapse" data-target=".fail .collapse">
+<h2>an event thrown when the batch process finishes and fails. can be overridden.</h2>
+<pre>fail(array $errors) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$errors</h4>
+<code>array</code><p>the errors available</p></div>
+</div></div>
+</div>
+<a name="getBenchmark" id="getBenchmark"></a><div class="element clickable method public getBenchmark" data-toggle="collapse" data-target=".getBenchmark .collapse">
+<h2>just return the benchmark of the batch job that ran</h2>
+<pre>getBenchmark() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="init" id="init"></a><div class="element clickable method public init" data-toggle="collapse" data-target=".init .collapse">
+<h2>an event thrown before doing the batch. can be overridden.</h2>
+<pre>init() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="log" id="log"></a><div class="element clickable method public log" data-toggle="collapse" data-target=".log .collapse">
+<h2>a static method that makes logging convenient in the system context</h2>
+<pre>log($message) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$message</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="output" id="output"></a><div class="element clickable method public output" data-toggle="collapse" data-target=".output .collapse">
+<h2>Overrideable method that handles the output</h2>
+<pre>output($output) : \must</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$output</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\must</code>return an output</div>
+</div></div>
+</div>
+<a name="run" id="run"></a><div class="element clickable method public run" data-toggle="collapse" data-target=".run .collapse">
+<h2>Public entry point for running a job on this batch</h2>
+<pre>run(Allproperty\BatchJob $job) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$job</h4>
+<code>\BatchJob</code><p>object $job BatchJob object</p>
+</div>
+</div></div>
+</div>
+<a name="success" id="success"></a><div class="element clickable method public success" data-toggle="collapse" data-target=".success .collapse">
+<h2>an event thrown when the batch process finishes and succeeds. can be overridden.</h2>
+<pre>success(string $output) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$output</h4>
+<code>string</code><p>string the captured output into stream</p></div>
+</div></div>
+</div>
+<a name="__done" id="__done"></a><div class="element clickable method private __done" data-toggle="collapse" data-target=".__done .collapse">
+<h2>an event thrown when the batch is completely done.</h2>
+<pre>__done() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="__start" id="__start"></a><div class="element clickable method private __start" data-toggle="collapse" data-target=".__start .collapse">
+<h2>an event thrown before doing the batch.</h2>
+<pre>__start() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24job" id="$job"> </a><div class="element clickable property protected $job" data-toggle="collapse" data-target=".$job .collapse">
+<h2>the BatchJob object of the current batch that needs to run</h2>
+<pre>$job </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24__ERRORS" id="$__ERRORS"> </a><div class="element clickable property private $__ERRORS" data-toggle="collapse" data-target=".$__ERRORS .collapse">
+<h2>an array of errors captured</h2>
+<pre>$__ERRORS </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24__OUTPUT" id="$__OUTPUT"> </a><div class="element clickable property private $__OUTPUT" data-toggle="collapse" data-target=".$__OUTPUT .collapse">
+<h2>the output to be returned by output()</h2>
+<pre>$__OUTPUT </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a6</a> and<br>
+            generated on 2012-06-28T10:11:52+08:00.<br></footer></div>
+</div>
+</body>
+</html>

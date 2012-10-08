@@ -1,0 +1,229 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Allproperty\BatchManager</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Slim.html"><i class="icon-folder-open"></i> Slim</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">133</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#getBatch" title="getBatch :: Get the Batch according to batchId"><span class="description">Get the Batch according to batchId</span><pre>getBatch()</pre></a></li>
+<li class="method public "><a href="#getBatchHealth" title="getBatchHealth :: Get the Batch Health according to batchId"><span class="description">Get the Batch Health according to batchId</span><pre>getBatchHealth()</pre></a></li>
+<li class="method public "><a href="#getBatches" title="getBatches :: Get all Batches from the Database"><span class="description">Get all Batches from the Database</span><pre>getBatches()</pre></a></li>
+<li class="method public "><a href="#getHistory" title="getHistory :: Get history from every job"><span class="description">Get history from every job</span><pre>getHistory()</pre></a></li>
+<li class="method public "><a href="#getJob" title="getJob :: Get the Job according to jobId"><span class="description">Get the Job according to jobId</span><pre>getJob()</pre></a></li>
+<li class="method public "><a href="#getJobs" title="getJobs :: Get all Jobs"><span class="description">Get all Jobs</span><pre>getJobs()</pre></a></li>
+<li class="method public "><a href="#getLogs" title="getLogs :: Get logs from every job"><span class="description">Get logs from every job</span><pre>getLogs()</pre></a></li>
+<li class="method public "><a href="#getRunningJobs" title="getRunningJobs :: Get all running jobs according to $batchId or not"><span class="description">Get all running jobs according to $batchId or not</span><pre>getRunningJobs()</pre></a></li>
+<li class="method public "><a href="#getRunningJobsToday" title="getRunningJobsToday :: Get all running jobs today"><span class="description">Get all running jobs today</span><pre>getRunningJobsToday()</pre></a></li>
+<li class="method public "><a href="#runJob" title="runJob :: Run a Job according to jobId"><span class="description">Run a Job according to jobId</span><pre>runJob()</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CAllproperty%5CBatchManager" id="\Allproperty\BatchManager"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Allproperty.html">Allproperty</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Allproperty.BatchManager.html">BatchManager</a>
+</li>
+</ul>
+<div href="../classes/Allproperty.BatchManager.html" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<p class="long_description"></p>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:johnmark@allproperty.com.sg">John Rocela</a></td>
+</tr>
+<tr>
+<th>date</th>
+<td>June 12, 2012</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="getBatch" id="getBatch"></a><div class="element clickable method public getBatch" data-toggle="collapse" data-target=".getBatch .collapse">
+<h2>Get the Batch according to batchId</h2>
+<pre>getBatch($batchId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>params</th>
+<td>Integer $batchId the ID of the batch</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$batchId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getBatchHealth" id="getBatchHealth"></a><div class="element clickable method public getBatchHealth" data-toggle="collapse" data-target=".getBatchHealth .collapse">
+<h2>Get the Batch Health according to batchId</h2>
+<pre>getBatchHealth($batchId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>params</th>
+<td>Integer $batchId the ID of the batch</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$batchId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getBatches" id="getBatches"></a><div class="element clickable method public getBatches" data-toggle="collapse" data-target=".getBatches .collapse">
+<h2>Get all Batches from the Database</h2>
+<pre>getBatches() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getHistory" id="getHistory"></a><div class="element clickable method public getHistory" data-toggle="collapse" data-target=".getHistory .collapse">
+<h2>Get history from every job</h2>
+<pre>getHistory() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getJob" id="getJob"></a><div class="element clickable method public getJob" data-toggle="collapse" data-target=".getJob .collapse">
+<h2>Get the Job according to jobId</h2>
+<pre>getJob($jobId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>params</th>
+<td>Integer $jobId the ID of the job</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$jobId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getJobs" id="getJobs"></a><div class="element clickable method public getJobs" data-toggle="collapse" data-target=".getJobs .collapse">
+<h2>Get all Jobs</h2>
+<pre>getJobs($batchId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$batchId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getLogs" id="getLogs"></a><div class="element clickable method public getLogs" data-toggle="collapse" data-target=".getLogs .collapse">
+<h2>Get logs from every job</h2>
+<pre>getLogs() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="getRunningJobs" id="getRunningJobs"></a><div class="element clickable method public getRunningJobs" data-toggle="collapse" data-target=".getRunningJobs .collapse">
+<h2>Get all running jobs according to $batchId or not</h2>
+<pre>getRunningJobs($batchId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>params</th>
+<td>Integer $batchId the ID of the batch</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$batchId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+<a name="getRunningJobsToday" id="getRunningJobsToday"></a><div class="element clickable method public getRunningJobsToday" data-toggle="collapse" data-target=".getRunningJobsToday .collapse">
+<h2>Get all running jobs today</h2>
+<pre>getRunningJobsToday() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="runJob" id="runJob"></a><div class="element clickable method public runJob" data-toggle="collapse" data-target=".runJob .collapse">
+<h2>Run a Job according to jobId</h2>
+<pre>runJob($jobId) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<table class="table table-bordered"><tr>
+<th>params</th>
+<td>Integer $jobId the ID of the job needed to run</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$jobId</h4>
+<code></code>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a6</a> and<br>
+            generated on 2012-06-28T10:11:52+08:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html><html xmlns:date="http://exslt.org/dates-and-times" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>phpDocumentor » \Slim_Router</title>
+<meta name="author" content="Mike van Riel">
+<meta name="description" content="">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="shortcut icon" href="../img/favicon.ico">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">phpDocumentor</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Packages</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Slim.html"><i class="icon-folder-open"></i> Slim</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">133</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">0</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<span class="btn-group visibility" data-toggle="buttons-checkbox"><button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited active" title="Show inherited elements">Inherited</button></span><div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-custom icon-method"></i> Methods</li>
+<li class="method public "><a href="#__construct" title="__construct :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#addNamedRoute" title="addNamedRoute :: Add named route"><span class="description">Add named route</span><pre>addNamedRoute()</pre></a></li>
+<li class="method public "><a href="#current" title="current :: Iterator Interface: Current"><span class="description">Iterator Interface: Current</span><pre>current()</pre></a></li>
+<li class="method public "><a href="#error" title="error :: Register a 500 Error callback"><span class="description">Register a 500 Error callback</span><pre>error()</pre></a></li>
+<li class="method public "><a href="#getCurrentRoute" title="getCurrentRoute :: Get Current Route"><span class="description">Get Current Route</span><pre>getCurrentRoute()</pre></a></li>
+<li class="method public "><a href="#getMatchedRoutes" title="getMatchedRoutes :: Return routes that match the current request"><span class="description">Return routes that match the current request</span><pre>getMatchedRoutes()</pre></a></li>
+<li class="method public "><a href="#getNamedRoute" title="getNamedRoute :: Get named route"><span class="description">Get named route</span><pre>getNamedRoute()</pre></a></li>
+<li class="method public "><a href="#getNamedRoutes" title="getNamedRoutes :: Get named routes"><span class="description">Get named routes</span><pre>getNamedRoutes()</pre></a></li>
+<li class="method public "><a href="#getRequest" title="getRequest :: Get Request"><span class="description">Get Request</span><pre>getRequest()</pre></a></li>
+<li class="method public "><a href="#getResponse" title="getResponse :: Get Response"><span class="description">Get Response</span><pre>getResponse()</pre></a></li>
+<li class="method public "><a href="#hasNamedRoute" title="hasNamedRoute :: Has named route"><span class="description">Has named route</span><pre>hasNamedRoute()</pre></a></li>
+<li class="method public "><a href="#key" title="key :: Iterator Interface: Key"><span class="description">Iterator Interface: Key</span><pre>key()</pre></a></li>
+<li class="method public "><a href="#map" title="map :: Map a route to a callback function"><span class="description">Map a route to a callback function</span><pre>map()</pre></a></li>
+<li class="method public "><a href="#next" title="next :: Iterator Interface: Next"><span class="description">Iterator Interface: Next</span><pre>next()</pre></a></li>
+<li class="method public "><a href="#notFound" title="notFound :: Register a 404 Not Found callback"><span class="description">Register a 404 Not Found callback</span><pre>notFound()</pre></a></li>
+<li class="method public "><a href="#rewind" title="rewind :: Iterator Interface: Rewind"><span class="description">Iterator Interface: Rewind</span><pre>rewind()</pre></a></li>
+<li class="method public "><a href="#urlFor" title="urlFor :: Get URL for named route"><span class="description">Get URL for named route</span><pre>urlFor()</pre></a></li>
+<li class="method public "><a href="#valid" title="valid :: Iterator Interface: Valid"><span class="description">Iterator Interface: Valid</span><pre>valid()</pre></a></li>
+<li class="nav-header">
+<i class="icon-custom icon-property"></i> Properties</li>
+<li class="nav-header protected">» Protected</li>
+<li class="property protected "><a href="#%24error" title="$error :: "><span class="description">&lt;p&gt;Callable to be invoked if application error&lt;/p&gt;</span><pre>$error</pre></a></li>
+<li class="property protected "><a href="#%24matchedRoutes" title="$matchedRoutes :: "><span class="description">&lt;p&gt;Array of routes that match the Request URI (lazy-loaded)&lt;/p&gt;
+</span><pre>$matchedRoutes</pre></a></li>
+<li class="property protected "><a href="#%24namedRoutes" title="$namedRoutes :: "><span class="description">&lt;p&gt;Lookup hash of named routes, keyed by route name&lt;/p&gt;</span><pre>$namedRoutes</pre></a></li>
+<li class="property protected "><a href="#%24notFound" title="$notFound :: "><span class="description">&lt;p&gt;Callable to be invoked if no matching routes are found&lt;/p&gt;</span><pre>$notFound</pre></a></li>
+<li class="property protected "><a href="#%24request" title="$request :: "><span class="description">$request</span><pre>$request</pre></a></li>
+<li class="property protected "><a href="#%24response" title="$response :: "><span class="description">$response</span><pre>$response</pre></a></li>
+<li class="property protected "><a href="#%24routes" title="$routes :: "><span class="description">&lt;p&gt;Lookup hash of all routes&lt;/p&gt;</span><pre>$routes</pre></a></li>
+</ul>
+</div>
+<div class="span8">
+<a name="%5CSlim_Router" id="\Slim_Router"></a><ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/.html"></a></li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Slim_Router.html">Slim_Router</a>
+</li>
+</ul>
+<div href="../classes/Slim_Router.html" class="element class">
+<p class="short_description">Router</p>
+<div class="details">
+<p class="long_description"><p>This class organizes Route objects and, upon request, will
+return an iterator for routes that match the HTTP request URI.</p></p>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Slim.html">Slim</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Josh Lockhart</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+</table>
+<h3>
+<i class="icon-custom icon-method"></i> Methods</h3>
+<a name="__construct" id="__construct"></a><div class="element clickable method public __construct" data-toggle="collapse" data-target=".__construct .collapse">
+<h2>Constructor</h2>
+<pre>__construct(Slim_Http_Request $request, Slim_Http_Response $response) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$request</h4>
+<code><a href="../classes/Slim_Http_Request.html">\Slim_Http_Request</a></code><p>The HTTP request object</p></div>
+<div class="subelement argument">
+<h4>$response</h4>
+<code><a href="../classes/Slim_Http_Response.html">\Slim_Http_Response</a></code><p>The HTTP response object</p></div>
+</div></div>
+</div>
+<a name="addNamedRoute" id="addNamedRoute"></a><div class="element clickable method public addNamedRoute" data-toggle="collapse" data-target=".addNamedRoute .collapse">
+<h2>Add named route</h2>
+<pre>addNamedRoute(string $name, Slim_Route $route) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The route name</p></div>
+<div class="subelement argument">
+<h4>$route</h4>
+<code><a href="../classes/Slim_Route.html">\Slim_Route</a></code><p>The route object</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.runtimeexception.php">\RuntimeException</a></code></th>
+<td>If a named route already exists with the same name</td>
+</tr></table>
+</div></div>
+</div>
+<a name="current" id="current"></a><div class="element clickable method public current" data-toggle="collapse" data-target=".current .collapse">
+<h2>Iterator Interface: Current</h2>
+<pre>current() : <a href="../classes/Slim_Route.html">\Slim_Route</a> | false</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/Slim_Route.html">\Slim_Route</a></code><code>false</code>
+</div>
+</div></div>
+</div>
+<a name="error" id="error"></a><div class="element clickable method public error" data-toggle="collapse" data-target=".error .collapse">
+<h2>Register a 500 Error callback</h2>
+<pre>error(mixed $callable) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$callable</h4>
+<code>mixed</code><p>Anything that returns TRUE for is_callable()</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="getCurrentRoute" id="getCurrentRoute"></a><div class="element clickable method public getCurrentRoute" data-toggle="collapse" data-target=".getCurrentRoute .collapse">
+<h2>Get Current Route</h2>
+<pre>getCurrentRoute() : <a href="../classes/Slim_Route.html">\Slim_Route</a> | false</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/Slim_Route.html">\Slim_Route</a></code><code>false</code>
+</div>
+</div></div>
+</div>
+<a name="getMatchedRoutes" id="getMatchedRoutes"></a><div class="element clickable method public getMatchedRoutes" data-toggle="collapse" data-target=".getMatchedRoutes .collapse">
+<h2>Return routes that match the current request</h2>
+<pre>getMatchedRoutes($reload) : \array[Slim_Route]</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$reload</h4>
+<code></code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\array[Slim_Route]</code></div>
+</div></div>
+</div>
+<a name="getNamedRoute" id="getNamedRoute"></a><div class="element clickable method public getNamedRoute" data-toggle="collapse" data-target=".getNamedRoute .collapse">
+<h2>Get named route</h2>
+<pre>getNamedRoute(string $name) : <a href="../classes/Slim_Route.html">\Slim_Route</a> | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code><a href="../classes/Slim_Route.html">\Slim_Route</a></code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="getNamedRoutes" id="getNamedRoutes"></a><div class="element clickable method public getNamedRoutes" data-toggle="collapse" data-target=".getNamedRoutes .collapse">
+<h2>Get named routes</h2>
+<pre>getNamedRoutes() : <a href="http://php.net/manual/en/class.arrayiterator.php">\ArrayIterator</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="http://php.net/manual/en/class.arrayiterator.php">\ArrayIterator</a></code></div>
+</div></div>
+</div>
+<a name="getRequest" id="getRequest"></a><div class="element clickable method public getRequest" data-toggle="collapse" data-target=".getRequest .collapse">
+<h2>Get Request</h2>
+<pre>getRequest() : <a href="../classes/Slim_Http_Request.html">\Slim_Http_Request</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Slim_Http_Request.html">\Slim_Http_Request</a></code></div>
+</div></div>
+</div>
+<a name="getResponse" id="getResponse"></a><div class="element clickable method public getResponse" data-toggle="collapse" data-target=".getResponse .collapse">
+<h2>Get Response</h2>
+<pre>getResponse() : <a href="../classes/Slim_Http_Response.html">\Slim_Http_Response</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Slim_Http_Response.html">\Slim_Http_Response</a></code></div>
+</div></div>
+</div>
+<a name="hasNamedRoute" id="hasNamedRoute"></a><div class="element clickable method public hasNamedRoute" data-toggle="collapse" data-target=".hasNamedRoute .collapse">
+<h2>Has named route</h2>
+<pre>hasNamedRoute(string $name) : bool</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The route name</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>bool</code></div>
+</div></div>
+</div>
+<a name="key" id="key"></a><div class="element clickable method public key" data-toggle="collapse" data-target=".key .collapse">
+<h2>Iterator Interface: Key</h2>
+<pre>key() : int | null</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>int</code><code>null</code>
+</div>
+</div></div>
+</div>
+<a name="map" id="map"></a><div class="element clickable method public map" data-toggle="collapse" data-target=".map .collapse">
+<h2>Map a route to a callback function</h2>
+<pre>map(string $pattern, mixed $callable) : <a href="../classes/Slim_Route.html">\Slim_Route</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pattern</h4>
+<code>string</code><p>The URL pattern (ie. "/books/:id")</p>
+</div>
+<div class="subelement argument">
+<h4>$callable</h4>
+<code>mixed</code><p>Anything that returns TRUE for is_callable()</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code><a href="../classes/Slim_Route.html">\Slim_Route</a></code></div>
+</div></div>
+</div>
+<a name="next" id="next"></a><div class="element clickable method public next" data-toggle="collapse" data-target=".next .collapse">
+<h2>Iterator Interface: Next</h2>
+<pre>next() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="notFound" id="notFound"></a><div class="element clickable method public notFound" data-toggle="collapse" data-target=".notFound .collapse">
+<h2>Register a 404 Not Found callback</h2>
+<pre>notFound(mixed $callable) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$callable</h4>
+<code>mixed</code><p>Anything that returns TRUE for is_callable()</p>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a name="rewind" id="rewind"></a><div class="element clickable method public rewind" data-toggle="collapse" data-target=".rewind .collapse">
+<h2>Iterator Interface: Rewind</h2>
+<pre>rewind() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="urlFor" id="urlFor"></a><div class="element clickable method public urlFor" data-toggle="collapse" data-target=".urlFor .collapse">
+<h2>Get URL for named route</h2>
+<pre>urlFor(string $name, array $params) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The name of the route</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Associative array of URL parameter names and values</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered"><tr>
+<th><code><a href="http://php.net/manual/en/class.runtimeexception.php">\RuntimeException</a></code></th>
+<td>If named route not found</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The URL for the given route populated with the given parameters</div>
+</div></div>
+</div>
+<a name="valid" id="valid"></a><div class="element clickable method public valid" data-toggle="collapse" data-target=".valid .collapse">
+<h2>Iterator Interface: Valid</h2>
+<pre>valid() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<p class="long_description"></p>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<h3>
+<i class="icon-custom icon-property"></i> Properties</h3>
+<a name="%24error" id="$error"> </a><div class="element clickable property protected $error" data-toggle="collapse" data-target=".$error .collapse">
+<h2>&lt;p&gt;Callable to be invoked if application error&lt;/p&gt;</h2>
+<pre>$error : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24matchedRoutes" id="$matchedRoutes"> </a><div class="element clickable property protected $matchedRoutes" data-toggle="collapse" data-target=".$matchedRoutes .collapse">
+<h2>&lt;p&gt;Array of routes that match the Request URI (lazy-loaded)&lt;/p&gt;
+</h2>
+<pre>$matchedRoutes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24namedRoutes" id="$namedRoutes"> </a><div class="element clickable property protected $namedRoutes" data-toggle="collapse" data-target=".$namedRoutes .collapse">
+<h2>&lt;p&gt;Lookup hash of named routes, keyed by route name&lt;/p&gt;</h2>
+<pre>$namedRoutes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24notFound" id="$notFound"> </a><div class="element clickable property protected $notFound" data-toggle="collapse" data-target=".$notFound .collapse">
+<h2>&lt;p&gt;Callable to be invoked if no matching routes are found&lt;/p&gt;</h2>
+<pre>$notFound : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24request" id="$request"> </a><div class="element clickable property protected $request" data-toggle="collapse" data-target=".$request .collapse">
+<h2>$request</h2>
+<pre>$request : <a href="../classes/Slim_Http_Request.html">\Slim_Http_Request</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24response" id="$response"> </a><div class="element clickable property protected $response" data-toggle="collapse" data-target=".$response .collapse">
+<h2>$response</h2>
+<pre>$response : <a href="../classes/Slim_Http_Response.html">\Slim_Http_Response</a></pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+<a name="%24routes" id="$routes"> </a><div class="element clickable property protected $routes" data-toggle="collapse" data-target=".$routes .collapse">
+<h2>&lt;p&gt;Lookup hash of all routes&lt;/p&gt;</h2>
+<pre>$routes : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><p class="long_description"></p></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a6</a> and<br>
+            generated on 2012-06-28T10:11:52+08:00.<br></footer></div>
+</div>
+</body>
+</html>
