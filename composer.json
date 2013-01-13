@@ -1,0 +1,7 @@
+{
+    "name": "propertyguru/batchman",
+    "require": {
+        "php": ">=5.4",
+        "mtdowling/cron-expression": "1.*"
+    }
+}
